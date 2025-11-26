@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login/cadastro</title>
+    <link href='https://cdn.boxicons.com/3.0.5/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/loginstyle.css">
-
-    <script src="../js/script.js" defer></script>
-
-    <!-- Inserção de ícones -->
-    <script src="https://kit.fontawesome.com/bf477ee59c.js" crossorigin="anonymous"></script>
-
+    <title>Login/Cadastro IMPERIUM</title>
 </head>
+
 <body>
-    <section class="containerPai">
-        
-        <span class="exit">
-           <a href="../index.html"><img src="../public/images/backarrow.png" alt=""></a>
-        </span>
 
-        <div class="card loginActive">
+    <a href="../index.html">
+        <button class="corner-btn">
+            <img src="../public/STICKEN.png" alt="home">
+        </button>
+    </a>
 
-            
-            <div class="esquerda">
-
-                <div class="formLogin">
-                    <h2>Fazer Login</h2>
-                    <form action="">
-                        <input type="email" placeholder="E-mail">
-                        <input type="password" placeholder="Senha">
-                        <button type="submit">Entrar</button>
-                    </form>
-                </div>
-                <div class="facaLogin">
-                    <h2>Já tem <br>uma conta?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos voluptatem impedit.</p>
-                    <button class="loginButton">Faça login</button>
+    <div class="container">
+        <div class="form-box login">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="email" placeholder="Email de login" required>
+                    <i class='bx  bx-user'></i>
                 </div>
 
-            </div>
-             
-            <div class="direita">
-
-                <div class="formCadastro">
-                    <h2>Cadastro</h2>
-                    <form action="">
-                        <input type="text" placeholder="Nome">
-                        <input type="text" placeholder="CPF">
-                        <input type="email" placeholder="E-mail">
-                        <input type="password" placeholder="Senha">
-                        <input type="password" placeholder="Confirme a sua senha">
-                        <button type="submit">Cadastrar</button>
-                    </form>
-                </div>
-                <div class="facaCadastro">
-                    <h2>Não tem <br>uma conta?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam recusandae eaque repellat?</p>
-                    <button class="cadastroButton">Cadastre-se</button>
+                <div class="input-box">
+                    <input type="password" placeholder="Senha da conta" required>
+                    <i class='bx  bx-lock'></i>
                 </div>
 
-            </div>
-
-            
+                <div class="forgot-link">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p>Ou faça login com o Google</p>
+                <button></button>
+            </form>
         </div>
-    </section>
+
+        <div class="form-box register">
+            <form action="">
+                <h1 class="tittleSign">Registre-se</h1>
+                <div class="input-box reg">
+                    <input type="text" placeholder="Meu nome completo" required>
+                    <i class='bx  bx-user'></i>
+                </div>
+
+                <div class="input-box reg">
+                    <input type="email" placeholder="meuemail@gmail.com" required>
+                    <i class='bx  bx-envelope-alt'></i>
+                </div>
+
+                <div class="input-box reg">
+                    <input type="text" placeholder="xxx.xxx.xxx-00" required>
+                    <i class='bx  bx-user-id-card'></i>
+                </div>
+
+                <div class="input-box reg">
+                    <input type="password" placeholder="Senha" required>
+                    <i class='bx  bx-lock'></i>
+                </div>
+
+                <button type="submit" class="btn">Registre-se</button>
+                <p>Ou faça o resgistro pelo Google</p>
+                <button></button>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Seja bem-vindo</h1>
+                <p>Não tem uma conta?</p>
+                <button class="btn register-btn">Registre-se</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Olá de novo!</h1>
+                <p>Já uma conta?</p>
+                <button class="btn login-btn">Fazer Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
 </body>
+
 </html>
