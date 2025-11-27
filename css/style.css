@@ -252,4 +252,37 @@ footer .Localizacao {
     }
 }
 
+/* ===================================================== */
+/* SUPER-MOBILE — FOOTER PARA TELAS MUITO PEQUENAS      */
+/* ===================================================== */
 
+@media (max-width: 480px) {
+
+    footer {
+        padding: 20px 0;
+        height: auto;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;   /* 1 coluna apenas */
+        gap: 25px;                   /* menos espaço */
+        text-align: center;
+    }
+
+    footer h2 {
+        font-size: 20px !important;
+    }
+
+    footer .listas a {
+        font-size: 16px !important;  /* menor mas bem legível */
+    }
+
+    .input-container {
+        width: 95%;
+    }
+
+    iframe {
+        width: 95% !important;
+        height: 200px !important;
+    }
+}

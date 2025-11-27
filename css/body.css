@@ -819,3 +819,53 @@ section {
         /* seta maior */
     }
 }
+
+/* ===================================================== */
+/* SUPER-MOBILE — TELAS MUITO PEQUENAS (<= 480px)       */
+/* ===================================================== */
+
+@media (max-width: 480px) {
+
+    /* Reduz altura do slider para caber bem */
+    .slider {
+        height: 55vh !important;
+    }
+
+    /* Imagem mais ajustada */
+    .slider .list .item img {
+        object-position: 85% center !important; /* ainda mais puxado pra direita */
+    }
+
+    /* Títulos menores e mais compactos */
+    .slider .list .item .content .title {
+        font-size: 2.3rem !important;
+    }
+
+    .slider .list .item .content .type {
+        font-size: 1.8rem !important;
+    }
+
+    /* Botões menores */
+    .slider .list .item .button {
+        width: 75%;
+        margin-top: 15px;
+    }
+
+    .slider .list .item .button button {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+    }
+
+    /* Thumbnails ainda menores */
+    .thumbnail .item {
+        width: 60px !important;
+        height: 85px !important;
+    }
+
+    /* Setas mais compactas */
+    .nextPrevArrows button {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 1.2rem !important;
+    }
+}
