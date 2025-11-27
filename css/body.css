@@ -869,3 +869,37 @@ section {
         font-size: 1.2rem !important;
     }
 }
+
+@media (max-width: 480px) {
+
+    /* Espaçamento interno do conteúdo */
+    .slider .list .item .content {
+        gap: 12px !important; /* adiciona respiro entre os elementos */
+        margin-top: 10px;
+    }
+
+    /* Espaço maior entre título e subtítulo */
+    .slider .list .item .content .title {
+        margin-bottom: 8px !important;
+    }
+
+    .slider .list .item .content .type {
+        margin-bottom: 10px !important;
+    }
+
+    /* Botões com mais espaço ao redor */
+    .slider .list .item .button {
+        margin-top: 18px !important;
+        gap: 10px !important;
+    }
+
+    /* Espaço maior entre thumbnails e arrows (se estiver agrupado) */
+    .controlsMobile {
+        gap: 20px !important; /* aumenta o espaço lateral entre thumbnails e arrows */
+    }
+
+    /* Espaço vertical acima do conjunto arrows+thumbnail */
+    .controlsMobile {
+        bottom: 60px !important;
+    }
+}
