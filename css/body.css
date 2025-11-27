@@ -900,7 +900,11 @@ section {
     }
 
     /* Espaço vertical acima do conjunto arrows+thumbnail */
-    .controlsMobile {
-        margin-top: 20%;
+    .slider .controlsMobile .thumbnail{
+        top: 350px;
+    }
+
+    .slider .controlsMobile .nextPrevArrows{
+        top: 250px;
     }
 }
