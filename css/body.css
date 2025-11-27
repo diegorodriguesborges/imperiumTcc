@@ -875,7 +875,7 @@ section {
     /* Espaçamento interno do conteúdo */
     .slider .list .item .content {
         gap: 12px !important; /* adiciona respiro entre os elementos */
-        margin-bottom: 15px;
+        top: 95px;
     }
 
     /* Espaço maior entre título e subtítulo */
@@ -901,6 +901,6 @@ section {
 
     /* Espaço vertical acima do conjunto arrows+thumbnail */
     .controlsMobile {
-        bottom: -60px !important;
+        margin-top: 20%;
     }
 }
