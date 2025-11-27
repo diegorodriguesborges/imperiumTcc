@@ -286,3 +286,34 @@ footer .Localizacao {
         height: 200px !important;
     }
 }
+
+@media (max-width: 480px) {
+
+    /* NAV em linha no super-mobile */
+    header nav ul {
+        display: flex !important;
+        flex-direction: row !important;   /* todos em linha */
+        justify-content: center;          /* centralizados */
+        align-items: center;
+        gap: 12px;                        /* espaçamento entre links */
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul li {
+        margin: 0;                        /* remove margens que empurram */
+        padding: 0;
+    }
+
+    header nav ul li a {
+        font-size: 0.9rem !important;      /* menor para caber bem */
+        white-space: nowrap;               /* evita quebra de linha */
+        padding: 5px 6px;
+    }
+
+    /* Caso o header seja muito alto, reduzimos um pouco */
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+}
